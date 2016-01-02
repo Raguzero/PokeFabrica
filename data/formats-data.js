@@ -5363,6 +5363,69 @@ exports.BattleFormatsData = {
 		isNonstandard: true,
 		tier: "",
 	},
+	// MODIFICADO PARA POKEFABRICA
+     wintass: {
+			randomBattleMoves: ["tailglow","icebeam","iceshard","machpunch","surf","knockoff","gunkshot","crosschop","focusblast","bulkup","iciclecrash","autotomize","thunderbolt","rockblast","spikes","meteormash","hiddenpowerfighting"],
+        isNonstandard: true,
+tier: "PKF"
+            },
+				prinpawn: {
+			randomBattleMoves: ["return","shadowball","trickroom","earthpower","hiddenpowerfighting","willowisp","thunderbolt"],
+            isNonstandard: true,
+			eventPokemon: [
+			{"generation":6,"level":100,"isHidden":true,"moves":["rapidspin","memento","finalgambit","transform"],"pokeball":"cherishball"}
+		],
+          tier: "PKF"
+            },
+				coureen: {
+			randomBattleMoves: ["doubleedge","shadowball","return","lovelykiss","thunderbolt","hiddenpowerfighting","energyball","shadowclaw","hypervoice","earthpower"],
+            isNonstandard: true,
+          tier: "PKF"
+            },
+				kincurs: {
+			randomBattleMoves: ["rest","shadowclaw","return","rapidspin","sleeptalk","bulkup","brickbreak","foulplay"],
+            isNonstandard: true,
+          tier: "PKF"
+            },
+			posord: {
+			randomBattleMoves: ["honeclaws","shadowclaw","ironhead","icefang","thunderfang","moonlight","rockpolish","leafblade","knockoff"],
+            isNonstandard: true,
+          tier: "PKF"
+            },
+			toxlimetierra: {
+			randomBattleMoves: ["stealthrock","curse","slackoff","lowkick","earthpower","earthquake","flamethrower","thunderbolt","sludgewave"],
+           isNonstandard: true,
+          tier: "PKF"
+            },
+			toxlimeagua: {
+			randomBattleMoves: ["stealthrock","curse","slackoff","lowkick","surf","hydropump","flamethrower","thunderbolt","sludgewave"],
+           isNonstandard: true,
+          tier: "PKF"
+            },
+			toxlimeelectrico: {
+			randomBattleMoves: ["stealthrock","curse","slackoff","lowkick","discharge","thunderbolt","flamethrower","earthpower","sludgewave"],
+            isNonstandard: true,
+          tier: "PKF"
+            },
+			prabbit: {
+			randomBattleMoves: ["healbell","recover","psychic","darkpulse","wish","protect","encore","icebeam","thunderbolt","thunderwave"],
+            isNonstandard: true,
+          tier: "PKF"
+            },
+		strancloud: {
+		  randomBattleMoves: ["hurricane","thunder","weatherball","recover","voltswitch"],
+            isNonstandard: true,
+		eventPokemon: [{"generation":6,"level":1,"isHidden":false,"moves":["foulplay","sheercold","cottonguard","cottonspore"],"pokeball":"cherishball"}
+		],
+          tier: "PKF"
+            },
+		strancloudmega: {
+		randomBattleMoves: ["recover","blizzard","hurricane","thunder","weatherball","voltswitch","hiddenpowerfire"],
+		requiredItem: "Strancloudite",
+		 isNonstandard: true,
+		  tier: "PKF"
+	},
+			// MODIFICADO PARA POKEFABRICA
 	tomohawk: {
 		randomBattleMoves: ["aurasphere", "roost", "stealthrock", "rapidspin", "hurricane", "airslash", "taunt", "substitute", "toxic", "naturepower", "earthpower"],
 		isNonstandard: true,

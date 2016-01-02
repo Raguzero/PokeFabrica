@@ -466,8 +466,20 @@ exports.Formats = [
 		column: 2,
 
 		ruleset: ['OU'],
-		banlist: ['Allow CAP'],
+				// MODIFICADO PARA POKEFABRICA
+		banlist: ['Allow CAP', 'Wintass', 'Prinpawn', 'Coureen', 'Kincurs', 'Posord', 'Toxlimeelectrico', 'Toxlimeagua', 'Toxlimetierra', 'Prabbit', 'Strancloud']
+	// MODIFICADO PARA POKEFABRICA
 	},
+		// MODIFICADO PARA POKEFABRICA
+	{
+		name: "Metronome 6v6 Random",
+		section: "Other Metagames",
+
+		mod: 'metronomerandom',
+		team: 'randomMetronome',
+		ruleset: ['Pokemon', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview']
+	},
+		// MODIFICADO PARA POKEFABRICA
 	{
 		name: "Battle Factory",
 		section: "Other Metagames",
@@ -718,6 +730,109 @@ exports.Formats = [
 		ruleset: ['Pokemon', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod'],
 	},
 
+	// MODIFICADO PARA POKEFABRICA
+{
+		name: "POKEFABRICA OU",
+				desc: [
+	//		"&bullet; <a href=\"https://www.smogon.com/forums/threads/3521201/\">OU Metagame Discussion</a>",
+	//		"&bullet; <a href=\"https://www.smogon.com/dex/xy/tags/ou/\">OU Banlist</a>",
+			"&bullet; <a href=\"http://www.pokexperto.net/foros/index.php?topic=31846.0/\">Debate Metagame PokeFabrica</a>"
+		],
+		section: "PxP Metas",
+		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		banlist: ['Allow PKF', 'Prinpawn + Shadow Tag + Transform', 'Prinpawn + Shadow Tag + Memento', 'Prinpawn + Shadow Tag + Final Gambit', 'Prinpawn + Shadow Tag + Rapid Spin', 'Unreleased', 'Illegal', 'Uber', 'Soul Dew', 'Tomohawk', 'Necturna', 'Mollux', 'Aurumoth', 'Malaconda', 'Cawmodore', 'Volkraken', 'Syclant', 'Revenankh', 'Pyroak', 'Fidgit', 'Stratagem', 'Arghonaut', 'Kitsunoh', 'Cyclohm', 'Colossoil', 'Krilowatt', 'Voodoom', 'Plasmanta', 'Naviathan']
+	},
+	{
+		name: "POKEFABRICA UBER",
+			desc: ["&bullet; <a href=\"http://www.pokexperto.net/foros/index.php?topic=31846.0/\">Debate Metagame PokeFabrica</a>"
+		],
+		section: "PxP Metas",
+
+		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause'],
+		banlist: ['Allow PKF', 'Prinpawn + Shadow Tag + Transform', 'Prinpawn + Shadow Tag + Memento', 'Prinpawn + Shadow Tag + Final Gambit', 'Prinpawn + Shadow Tag + Rapid Spin', 'Unreleased', 'Illegal', 'Tomohawk', 'Necturna', 'Mollux', 'Aurumoth', 'Malaconda', 'Cawmodore', 'Volkraken', 'Syclant', 'Revenankh', 'Pyroak', 'Fidgit', 'Stratagem', 'Arghonaut', 'Kitsunoh', 'Cyclohm', 'Colossoil', 'Krilowatt', 'Voodoom', 'Plasmanta', 'Naviathan']
+	},
+	
+	{
+		name: "Pokefabrica Dobles OU",
+		desc: [
+			"&bullet; <a href=\"http://www.pokexperto.net/foros/index.php?topic=31846.0/\">Debate Metagame PokeFabrica</a>"
+		],
+		section: "PxP Metas",
+
+		gameType: 'doubles',
+		ruleset: ['Pokemon', 'Standard Doubles', 'Team Preview'],
+		banlist: ['Allow PKF', 'Prinpawn + Shadow Tag + Transform', 'Prinpawn + Shadow Tag + Memento', 'Prinpawn + Shadow Tag + Final Gambit', 'Prinpawn + Shadow Tag + Rapid Spin', 'Arceus', 'Dialga', 'Giratina', 'Giratina-Origin', 'Groudon', 'Ho-Oh', 'Kyogre', 'Kyurem-White', 'Lugia', 'Mewtwo',
+			'Palkia', 'Rayquaza', 'Reshiram', 'Xerneas', 'Yveltal', 'Zekrom', 'Salamencite', 'Soul Dew', 'Dark Void',
+			'Gravity ++ Grass Whistle', 'Gravity ++ Hypnosis', 'Gravity ++ Lovely Kiss', 'Gravity ++ Sing', 'Gravity ++ Sleep Powder', 'Gravity ++ Spore',  'Tomohawk', 'Necturna', 'Mollux', 'Aurumoth', 'Malaconda', 'Cawmodore', 'Volkraken', 'Syclant', 'Revenankh', 'Pyroak', 'Fidgit', 'Stratagem', 'Arghonaut', 'Kitsunoh', 'Cyclohm', 'Colossoil', 'Krilowatt', 'Voodoom', 'Plasmanta', 'Naviathan']
+	},
+	{
+		name: "Pokefabrica Dobles Uber",
+		desc: [
+			"&bullet; <a href=\"http://www.pokexperto.net/foros/index.php?topic=31846.0/\">Debate Metagame PokeFabrica</a>"
+		],
+		section: "PxP Metas",
+
+		gameType: 'doubles',
+		ruleset: ['Pokemon', 'Species Clause', 'Moody Clause', 'OHKO Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
+		banlist: ['Allow PKF', 'Prinpawn + Shadow Tag + Transform', 'Prinpawn + Shadow Tag + Memento', 'Prinpawn + Shadow Tag + Final Gambit', 'Prinpawn + Shadow Tag + Rapid Spin', 'Unreleased', 'Illegal', 'Dark Void',  'Tomohawk', 'Necturna', 'Mollux', 'Aurumoth', 'Malaconda', 'Cawmodore', 'Volkraken', 'Syclant', 'Revenankh', 'Pyroak', 'Fidgit', 'Stratagem', 'Arghonaut', 'Kitsunoh', 'Cyclohm', 'Colossoil', 'Krilowatt', 'Voodoom', 'Plasmanta', 'Naviathan']
+	},
+	
+	{
+		name: "PokeFabrica Triples OU",
+		section: "PxP Metas",
+
+		gameType: 'triples',
+		ruleset: ['Pokemon', 'Species Clause', 'OHKO Clause', 'Moody Clause', 'Evasion Moves Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
+		banlist: ['Allow PKF', 'Prinpawn + Shadow Tag + Transform', 'Prinpawn + Shadow Tag + Memento', 'Prinpawn + Shadow Tag + Final Gambit', 'Prinpawn + Shadow Tag + Rapid Spin', 'Illegal', 'Unreleased', 'Arceus', 'Dialga', 'Giratina', 'Giratina-Origin', 'Groudon', 'Ho-Oh', 'Kyogre', 'Kyurem-White',
+			'Lugia', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Xerneas', 'Yveltal', 'Zekrom',
+			'Soul Dew', 'Dark Void', 'Perish Song', 'Tomohawk', 'Necturna', 'Mollux', 'Aurumoth', 'Malaconda', 'Cawmodore', 'Volkraken', 'Syclant', 'Revenankh', 'Pyroak', 'Fidgit', 'Stratagem', 'Arghonaut', 'Kitsunoh', 'Cyclohm', 'Colossoil', 'Krilowatt', 'Voodoom', 'Plasmanta', 'Naviathan'
+		]
+		},
+		
+			{
+		name: "PokeFabrica Triples Uber",
+		section: "PxP Metas",
+
+		gameType: 'triples',
+		ruleset: ['Pokemon', 'Species Clause', 'Moody Clause', 'OHKO Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
+		banlist: ['Allow PKF', 'Prinpawn + Shadow Tag + Transform', 'Prinpawn + Shadow Tag + Memento', 'Prinpawn + Shadow Tag + Final Gambit', 'Prinpawn + Shadow Tag + Rapid Spin', 'Unreleased', 'Illegal', 'Dark Void',  'Tomohawk', 'Necturna', 'Mollux', 'Aurumoth', 'Malaconda', 'Cawmodore', 'Volkraken', 'Syclant', 'Revenankh', 'Pyroak', 'Fidgit', 'Stratagem', 'Arghonaut', 'Kitsunoh', 'Cyclohm', 'Colossoil', 'Krilowatt', 'Voodoom', 'Plasmanta', 'Naviathan']
+		},
+		
+{
+		name: "METROGUSANO",
+		section: "PxP Metas",
+        mod: 'metrogusano',
+		ruleset: ['OU'],
+		banlist: ['Unreleased', 'Illegal', 'Uber', 'OU', 'BL', 'UU', 'BL2', 'RU', 'BL3', 'NU', 'BL4', 'PU'] 
+},
+
+{
+		name: "PKF versus CAP",
+				desc: [
+	//		"&bullet; <a href=\"https://www.smogon.com/forums/threads/3521201/\">OU Metagame Discussion</a>",
+	//		"&bullet; <a href=\"https://www.smogon.com/dex/xy/tags/ou/\">OU Banlist</a>",
+			"&bullet; <a href=\"http://www.pokexperto.net/foros/index.php?topic=31846.0/\">Debate Metagame PokeFabrica</a>"
+		],
+		section: "PxP Metas",
+		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
+		banlist: ['Alow CAP', 'Allow PKF', 'Prinpawn + Shadow Tag + Transform', 'Prinpawn + Shadow Tag + Memento', 'Prinpawn + Shadow Tag + Final Gambit', 'Prinpawn + Shadow Tag + Rapid Spin', 'Unreleased', 'Illegal', 'Uber', 'Soul Dew', 
+		'Tomohawk' + 'Prinpawn', 'Tomohawk' + 'Coureen', 'Tomohawk' + 'Kincurs', 'Tomohawk' + 'Posord', 'Tomohawk' + 'Toxlime', 'Tomohawk' + 'Wintass', 'Tomohawk' + 'Prabbit', 'Tomohawk' + 'Strancloud', 'Necturna' + 'Prinpawn', 'Necturna' + 'Coureen', 'Necturna' + 'Kincurs',  
+		'Necturna' + 'Posord',  'Necturna' + 'Toxlime',  'Necturna' + 'Wintass',  'Necturna' + 'Prabbit',  'Necturna' + 'Strancloud', 'Mollux' + 'Prinpawn', 'Mollux' + 'Coureen', 'Mollux' + 'Kincurs', 'Mollux' + 'Posord', 'Mollux' + 'Toxlime', 'Mollux' + 'Wintass', 'Mollux' + 'Prabbit',
+		'Mollux' + 'Strancloud', 'Aurumoth' + 'Prinpawn', 'Aurumoth' + 'Coureen', 'Aurumoth' + 'Kincurs', 'Aurumoth' + 'Posord', 'Aurumoth' + 'Toxlime', 'Aurumoth' + 'Wintass', 'Aurumoth' + 'Prabbit', 'Aurumoth' + 'Strancloud', 'Malaconda' + 'Prinpawn', 'Malaconda' + 'Coureen', 'Malaconda' + 'Kincurs', 
+		'Malaconda' + 'Posord', 'Malaconda' + 'Toxlime', 'Malaconda' + 'Wintass', 'Malaconda' + 'Prabbit', 'Malaconda' + 'Strancloud', 'Cawmodore' + 'Prinpawn', 'Cawmodore' + 'Coureen', 'Cawmodore' + 'Kincurs', 'Cawmodore' + 'Posord', 'Cawmodore' + 'Toxlime', 'Cawmodore' + 'Wintass', 'Cawmodore' + 'Prabbit', 
+		'Cawmodore' + 'Strancloud', 'Volkraken' + 'Prinpawn', 'Volkraken' + 'Coureen', 'Volkraken' + 'Kincurs', 'Volkraken' + 'Posord', 'Volkraken' + 'Toxlime', 'Volkraken' + 'Wintass', 'Volkraken' + 'Prabbit', 'Volkraken' + 'Strancloud', 'Syclant' + 'Prinpawn', 'Syclant' + 'Coureen', 'Syclant' + 'Kincurs', 
+		'Syclant' + 'Posord', 'Syclant' + 'Toxlime', 'Syclant' + 'Wintass', 'Syclant' + 'Prabbit', 'Syclant' + 'Strancloud', 'Revenankh' + 'Prinpawn', 'Revenankh' + 'Coureen', 'Revenankh' + 'Kincurs', 'Revenankh' + 'Posord', 'Revenankh' + 'Toxlime', 'Revenankh' + 'Wintass', 'Revenankh' + 'Prabbit', 
+		'Revenankh' + 'Strancloud', 'Pyroak' + 'Prinpawn', 'Pyroak' + 'Coureen', 'Pyroak' + 'Kincurs', 'Pyroak' + 'Posord', 'Pyroak' + 'Toxlime', 'Pyroak' + 'Wintass', 'Pyroak' + 'Strancloud', 'Fidgit' + 'Prinpawn', 'Fidgit' + 'Coureen', 'Fidgit' + 'Kincurs', 'Fidgit' + 'Posord', 'Fidgit' + 'Toxlime', 
+		'Fidgit' + 'Wintass', 'Fidgit' + 'Prabbit', 'Fidgit' + 'Strancloud', 'Stratagem' + 'Prinpawn', 'Stratagem' + 'Coureen', 'Stratagem' + 'Kincurs', 'Stratagem' + 'Posord', 'Stratagem' + 'Toxlime', 'Stratagem' + 'Wintass', 'Stratagem' + 'Prabbit', 'Stratagem' + 'Strancloud', 'Arghonaut' + 'Prinpawn', 
+		'Arghonaut' + 'Coureen', 'Arghonaut' + 'Kincurs', 'Arghonaut' + 'Posord', 'Arghonaut' + 'Toxlime', 'Arghonaut' + 'Wintass', 'Arghonaut' + 'Prabbit', 'Arghonaut' + 'Strancloud', 'Kitsunoh' + 'Prinpawn', 'Kitsunoh' + 'Coureen', 'Kitsunoh' + 'Kincurs', 'Kitsunoh' + 'Posord', 'Kitsunoh' + 'Toxlime', 
+		'Kitsunoh' + 'Wintass', 'Kitsunoh' + 'Prabbit', 'Kitsunoh' + 'Strancloud', 'Cyclohm' + 'Prinpawn', 'Cyclohm' + 'Coureen', 'Cyclohm' + 'Kincurs', 'Cyclohm' + 'Posord', 'Cyclohm' + 'Toxlime', 'Cyclohm' + 'Wintass', 'Cyclohm' + 'Prabbit', 'Cyclohm' + 'Strancloud', 'Colossoil' + 'Prinpawn', 
+		'Colossoil' + 'Coureen', 'Colossoil' + 'Kincurs', 'Colossoil' + 'Posord', 'Colossoil' + 'Toxlime', 'Colossoil' + 'Wintass', 'Colossoil' + 'Prabbit', 'Colossoil' + 'Strancloud', 'Krilowatt' + 'Prinpawn', 'Krilowatt' + 'Coureen', 'Krilowatt' + 'Kincurs', 'Krilowatt' + 'Posord', 'Krilowatt' + 'Toxlime', 
+		'Krilowatt' + 'Wintass', 'Krilowatt' + 'Prabbit', 'Krilowatt' + 'Strancloud', 'Voodoom' + 'Prinpawn', 'Voodoom' + 'Coureen', 'Voodoom' + 'Kincurs', 'Voodoom' + 'Posord', 'Voodoom' + 'Toxlime', 'Voodoom' + 'Wintass', 'Voodoom' + 'Prabbit', 'Voodoom' + 'Strancloud', 'Plasmanta' + 'Prinpawn', 'Plasmanta' + 'Coureen', 
+		'Plasmanta' + 'Kincurs', 'Plasmanta' + 'Posord', 'Plasmanta' + 'Toxlime', 'Plasmanta' + 'Wintass', 'Plasmanta' + 'Prabbit', 'Plasmanta' + 'Strancloud', 'Naviathan' + 'Prinpawn', 'Naviathan' + 'Coureen', 'Naviathan' + 'Kincurs', 'Naviathan' + 'Posord', 'Naviathan' + 'Toxlime', 'Naviathan' + 'Wintass', 
+		'Naviathan' + 'Prabbit', 'Naviathan' + 'Strancloud']
+	},
+// MODIFICADO PARA POKEFABRICA
+	
 	// BW2 Singles
 	///////////////////////////////////////////////////////////////////
 

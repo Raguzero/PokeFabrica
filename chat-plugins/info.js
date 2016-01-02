@@ -378,7 +378,9 @@ exports.commands = {
 
 		if (!target) return this.parse('/help dexsearch');
 		let searches = [];
-		let allTiers = {'uber':1, 'ou':1, 'bl':1, 'uu':1, 'bl2':1, 'ru':1, 'bl3':1, 'nu':1, 'bl4':1, 'pu':1, 'nfe':1, 'lc uber':1, 'lc':1, 'cap':1};
+				// MODIFICADO PARA POKEFABRICA
+		let allTiers = {'uber':1, 'ou':1, 'bl':1, 'uu':1, 'bl2':1, 'ru':1, 'bl3':1, 'nu':1, 'bl4':1, 'pu':1, 'nfe':1, 'lc uber':1, 'lc':1, 'cap':1, , 'pkf':1};
+				// MODIFICADO PARA POKEFABRICA
 		let allColours = {'green':1, 'red':1, 'blue':1, 'white':1, 'brown':1, 'yellow':1, 'purple':1, 'pink':1, 'gray':1, 'black':1};
 		let allStats = {'hp':1, 'atk':1, 'def':1, 'spa':1, 'spd':1, 'spe':1, 'bst':1};
 		let showAll = false;
@@ -581,8 +583,10 @@ exports.commands = {
 		for (let pokemon in Tools.data.Pokedex) {
 			let template = Tools.getTemplate(pokemon);
 			let megaSearchResult = (megaSearch === null || (megaSearch === true && template.isMega) || (megaSearch === false && !template.isMega));
-			if (template.tier !== 'Unreleased' && template.tier !== 'Illegal' && (template.tier !== 'CAP' || capSearch) && megaSearchResult) {
-				dex[pokemon] = template;
+			// MODIFICADO PARA POKEFABRICA
+			if (template.tier !== 'Unreleased' && template.tier !== 'Illegal' && (template.tier !== 'CAP' || capSearch) && (template.tier !== 'PKF' || (searches['tier'] && searches['tier']['pkf'])) && megaSearchResult) {
+			// MODIFICADO PARA POKEFABRICA
+			dex[pokemon] = template;
 			}
 		}
 
@@ -723,7 +727,9 @@ exports.commands = {
 	dexsearchhelp: ["/dexsearch [parameter], [parameter], [parameter], ... - Searches for Pok\u00e9mon that fulfill the selected criteria",
 		"Search categories are: type, tier, color, moves, ability, gen, recovery, priority, stat.",
 		"Valid colors are: green, red, blue, white, brown, yellow, purple, pink, gray and black.",
-		"Valid tiers are: Uber/OU/BL/UU/BL2/RU/BL3/NU/BL4/PU/NFE/LC/CAP.",
+		// MODIFICADO PARA POKEFABRICA
+		"Valid tiers are: Uber/OU/BL/UU/BL2/RU/BL3/NU/BL4/PU/NFE/LC/CAP/PKF.",
+		// MODIFICADO PARA POKEFABRICA
 		"Types must be followed by ' type', e.g., 'dragon type'.",
 		"Inequality ranges use the characters '>=' for '≥' and '<=' for '≤', e.g., 'hp <= 95' searches all Pok\u00e9mon with HP less than or equal to 95.",
 		"Parameters can be excluded through the use of '!', e.g., '!water type' excludes all water types.",
@@ -2227,14 +2233,16 @@ exports.commands = {
 			"- We are restarting to update Pok&eacute;mon Showdown to a newer version"
 		);
 	},
-
-	rule: 'rules',
-	rules: function (target, room, user) {
-		if (!target) {
+	// MODIFICADO PARA POKEFABRICA
+	reglas: 'reglas',
+	reglas: function (target, room, user) {
+			if (!target) {
 			if (!this.canBroadcast()) return;
-			this.sendReplyBox("Please follow the rules:<br />" +
+			this.sendReplyBox("Por favor, sigue las reglas:<br />" +
 				(room.rulesLink ? "- <a href=\"" + Tools.escapeHTML(room.rulesLink) + "\">" + Tools.escapeHTML(room.title) + " room rules</a><br />" : "") +
-				"- <a href=\"https://pokemonshowdown.com/rules\">" + (room.rulesLink ? "Global rules" : "Rules") + "</a>");
+	//			"- <a href=\"https://pokemonshowdown.com/rules\">" + (room.rulesLink ? "Global rules" : "Rules") + "</a>");
+	"- <a href=\"https://pastebin.com/zsuXA8ck\">" + (room.rulesLink ? "Global rules" : "Reglas") + "</a>");
+				// MODIFICADO PARA POKEFABRICA
 			return;
 		}
 		if (!this.can('roommod', null, room)) return;

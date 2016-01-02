@@ -89,7 +89,9 @@ exports.BattleFormats = {
 			let problems = [];
 			let totalEV = 0;
 			let allowCAP = !!(format && format.banlistTable && format.banlistTable['allowcap']);
-
+			// MODIFICADO PARA POKEFABRICA
+			let allowPKF = !!(format && format.banlistTable && format.banlistTable['allowpkf']);
+			// MODIFICADO PARA POKEFABRICA
 			if (set.species === set.name) delete set.name;
 			if (template.gen > this.gen) {
 				problems.push(set.species + ' does not exist in gen ' + this.gen + '.');
@@ -121,7 +123,10 @@ exports.BattleFormats = {
 				problems.push((set.name || set.species) + ' is higher than level 100.');
 			}
 
-			if (!allowCAP || template.tier !== 'CAP') {
+								// MODIFICADO PARA POKEFABRICA
+			if((!allowCAP && !allowPKF) || ((template.tier !== 'PKF') && ( template.tier !== 'CAP' ))) {
+			// MODIFICADO PARA POKEFABRICA
+			// if (!allowCAP || template.tier !== 'CAP') {
 				if (template.isNonstandard) {
 					problems.push(set.species + ' does not exist.');
 				}

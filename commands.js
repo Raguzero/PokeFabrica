@@ -2653,10 +2653,13 @@ exports.commands = {
 		if (target === 'help' || target === 'h' || target === '?' || target === 'commands') {
 			this.sendReply("/help OR /h OR /? - Gives you help.");
 		} else if (!target) {
-			this.sendReply("COMMANDS: /nick, /avatar, /rating, /whois, /msg, /reply, /ignore, /away, /back, /timestamps, /highlight");
-			this.sendReply("INFORMATIONAL COMMANDS: /data, /dexsearch, /movesearch, /groups, /faq, /rules, /intro, /formatshelp, /othermetas, /learn, /analysis, /calc (replace / with ! to broadcast. Broadcasting requires: + % @ # & ~)");
+			// TRADUCIDO PARA POKEFABRICA
+			this.sendReply("COMMANDS: /nick, /avatar, /rating, /whois, /msg, /reply, /ignore, /away, /back, /timestamps, /highlight, /helado, /emoticons, /slap, /twitter");
+			this.sendReply("INFORMATIONAL COMMANDS: /data, /dexsearch, /movesearch, /groups, /faq, /rules, /intro, /formatshelp, /othermetas, /learn, /analysis, /calc, /pxpmetas, /pkfintro, /lideres, /staff (replace / with ! to broadcast. Broadcasting requires: + % @ # & ~)");
+			this.sendReply("COMANDOS PxP BOT: .about, .say, .tell, .seen, .salt, .whois, .helix, .rps");
 			if (user.group !== Config.groupsranking[0]) {
-				this.sendReply("DRIVER COMMANDS: /warn, /mute, /hourmute, /unmute, /alts, /forcerename, /modlog, /modnote, /lock, /unlock, /announce, /redirect");
+				this.sendReply("DRIVER COMMANDS: /salahelp, /kick, /warn, /mute, /hourmute, /unmute, /alts, /forcerename, /modlog, /modnote, /lock, /unlock, /announce, /redirect");
+				// TRADUCIDO PARA POKEFABRICA
 				this.sendReply("MODERATOR COMMANDS: /ban, /unban, /ip, /modchat");
 				this.sendReply("LEADER COMMANDS: /declare, /forcetie, /forcewin, /promote, /demote, /banip, /host, /unbanall");
 			}

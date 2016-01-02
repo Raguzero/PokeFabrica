@@ -11332,4 +11332,17 @@ exports.BattlePokedex = {
 		color: "Brown",
 		eggGroups: ["Human-Like", "Ground"],
 	},
+	// MODIFICADO PARA POKEFABRICA
+prinpawn:{num:928,species:"Prinpawn",types:["Normal","Ghost"],baseStats:{hp:60,atk:60,def:60,spa:60,spd:60,spe:60},abilities:{0:"Shadow Tag",H:"Scrappy"},heightm:0.8,weightkg:43,color:"White",evos:["coureen","kincurs"],evoLevel:30,eggGroups:["Human-Like","Amorphous"]},
+coureen:{num:929,species:"Coureen",types:["Normal","Ghost"],gender:"F",baseStats:{hp:60,atk:100,def:45,spa:100,spd:45,spe:120},abilities:{0:"Moxie",H:"Pixilate"},heightm:1.8,weightkg:68,color:"White",eggGroups:["Human-Like","Amorphous"]},
+kincurs:{num:930,species:"Kincurs",types:["Normal","Ghost"],gender:"M",baseStats:{hp:150,atk:75,def:65,spa:75,spd:65,spe:40},abilities:{0:"Overcoat",H:"Own Tempo"},heightm:1.8,weightkg:108,color:"White",eggGroups:["Human-Like","Amorphous"]},
+posord:{num:931,species:"Posord",types:["Ghost","Steel"],baseStats:{hp:55,atk:90,def:120,spa:70,spd:60,spe:109},abilities:{0:"Levitate"},heightm:1.1,weightkg:129,color:"Purple",eggGroups:["Amorphous","Mineral"]},
+toxlimetierra:{num:932,species:"Toxlime-Tierra",baseSpecies:"Toxlime",forme:"Tierra",formeLetter:"T",types:["Poison","Ground"],baseStats:{hp:100,atk:75,def:90,spa:75,spd:80,spe:86},abilities:{0:"Cloud Nine"},heightm:1.2,weightkg:35,color:"Brown",eggGroups:["Water 1","Monster"]},
+toxlimeagua:{num:932,species:"Toxlime-Agua",baseSpecies:"Toxlime",forme:"Agua",formeLetter:"A",types:["Poison","Water"],baseStats:{hp:100,atk:75,def:85,spa:75,spd:85,spe:86},abilities:{0:"Cloud Nine"},heightm:1.2,weightkg:35,color:"Blue",eggGroups:["Water 1","Monster"]},
+toxlimeelectrico:{num:932,species:"Toxlime-Electrico",baseSpecies:"Toxlime",forme:"Electrico",formeLetter:"E",types:["Poison","Electric"],baseStats:{hp:100,atk:75,def:80,spa:75,spd:90,spe:86},abilities:{0:"Cloud Nine"},heightm:1.2,weightkg:35,color:"Yellow",eggGroups:["Water 1","Monster"]},
+wintass:{num:933,species:"Wintass",types:["Ice","Fighting"],baseStats:{hp:150,atk:130,def:60,spa:64,spd:70,spe:46},abilities:{0:"Ice Body",1:"Technician"},heightm:2.2,weightkg:235.5,color:"White",eggGroups:["Human-Like","Monster"]},
+prabbit:{num:934,species:"Prabbit",types:["Psychic","Dark"],baseStats:{hp:100,atk:45,def:120,spa:72,spd:140,spe:78},abilities:{0:"Unaware",1:"Magician"},heightm:0.7,weightkg:22.5,color:"White",eggGroups:["Human-Like","Fairy"]},
+strancloud:{num:935,species:"Strancloud",types:["Electric","Flying"],baseStats:{hp:95,atk:69,def:75,spa:90,spd:95,spe:91},abilities:{0:"Drizzle"},heightm:0.7,weightkg:22.5,color:"White",eggGroups:["Amorphous","Flying"]},
+strancloudmega:{num:935,species:"Strancloud-Mega",baseSpecies:"Strancloud",forme:"Mega",formeLetter:"M",types:["Electric","Ice"],baseStats:{hp:95,atk:63,def:90,spa:150,spd:95,spe:122},abilities:{0:"Snow Warning"},heightm:2.4,weightkg:155.5,color:"White",eggGroups:["Amorphous","Flying"]},
+// MODIFICADO PARA POKEFABRICA
 };
