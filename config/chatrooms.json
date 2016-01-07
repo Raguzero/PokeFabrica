@@ -1,0 +1,9 @@
+[
+{"title":"Lobby","isOfficial":true,"autojoin":true,"introMessage":"<center><img  height=\"200\" width=\"500\" src=\"http://www.pokexperto.net/main/layout/bannerROZA.png\" /><div class=\"broadcast-red welcome\"><h3>Bienvenidos al servidor ***Pokexperto**</h3><p><em> En este servidor está hospeado el Proyecto PokeFábrica, de esta forma, PRÓXIMAMENTE se podrá jugar con Fakemons creados por la Comunidad de Pokexperto.<em></p><p><em>¿Qué no sabes de lo que se trata el Proyecto PokeFábrica? <a href=\"http://www.pokexperto.net/foros/index.php?topic=31846.0\"><button>Entra aquí</button></a><em></p><hr /><div><a href=\"http://www.pokexperto.net/\"><button>Web PxP</button></a><a href=\"http://www.pokexperto.net/foros/index.php\"><button>Foros PxP</button></a><a href=\"https://twitter.com/ForosPxP\"><button>Twitter Foros PxP</button></a><button name=\"send\" value=\"/commands\">Comandos del server</button><button name=\"send\" value=\"/reglas\">Reglas</button><button name=\"send\" value=\"/lideres\">Lideres</button></div><p><em>Para asuntos de moderación contactad con el Staff</em></p></div><hr /> </center>"},
+{"title":"Staff","isPrivate":true,"staffRoom":true,"staffAutojoin":true,"desc":"Bienvenidos al lugar donde la administración toma sus macabras decisiones","introMessage":"Bienvenidos al lugar donde la administración toma sus macabras decisiones","rulesLink":"OLA K PASA","auth":{"shiyo":"#"}},
+{"title":"Trivia"},
+{"title":"Proyecto PokeFabrica","isOfficial":true},
+{"title":"Tournaments"},
+{"title":"Help"},
+{"title":"HPL"}
+]
